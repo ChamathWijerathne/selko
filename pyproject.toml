@@ -1,16 +1,20 @@
 [project]
 name = "selko"
 version = "0.1.0"
-description = "Add your description here"
+description = "Bilingual RAG assistant answering English questions about Finnish public services (Kela, Migri, Vero) with cited sources."
 readme = "README.md"
 authors = [
     { name = "Chamath Wijerathne", email = "anuradhika.wije@gmail.com" }
 ]
+license = "MIT"
 requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
 selko = "selko:main"
+
+[project.urls]
+Repository = "https://github.com/ChamathWijerathne/selko"
 
 [build-system]
 requires = ["uv_build>=0.11.24,<0.12.0"]
@@ -22,3 +26,25 @@ dev = [
     "pytest>=9.1.1",
     "ruff>=0.16.10",
 ]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort (import sorting)
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "N",    # pep8-naming
+    "SIM",  # flake8-simplify
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["selko"]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true

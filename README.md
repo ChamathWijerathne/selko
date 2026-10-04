@@ -6,7 +6,7 @@
 
 ## Disclaimer ##
 
-not affiliated with Kela, Migri or Vero, and not legal advice; always check the official source. 
+not affiliated with Kela, Migri or Vero, and not legal advice; always check the official source.
 ## Problem ##
 
 
