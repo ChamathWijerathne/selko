@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# Secrets (keep .env.example tracked)
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Test coverage
+.coverage
+htmlcov/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
